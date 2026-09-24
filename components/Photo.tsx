@@ -15,7 +15,7 @@ export default function Photo({
 }) {
   return (
     <div className="photo" style={minHeight ? { minHeight } : undefined}>
-      <Image src={src} alt={alt} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+      <Image src={src} alt={alt} fill sizes="(max-width: 768px) 100vw, 50vw" quality={75} style={{ objectFit: "cover" }} />
       {(caption || captionLabel) && (
         <div className="cap">
           {captionLabel && <b>{captionLabel}</b>}
@@ -25,3 +25,4 @@ export default function Photo({
     </div>
   );
 }
+

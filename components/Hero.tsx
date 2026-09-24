@@ -1,42 +1,33 @@
-"use client";
-import { useEffect, useState } from "react";
-
-const heroSlides = [
-  "/images/edu/leadership.jpg",
-  "/images/edu/flourid.jpg",
-  "/images/edu/community.jpg",
-  "/images/edu/interview.jpg",
-];
+import Image from "next/image";
 
 export default function Hero({
   children,
   style,
   slideshow = true,
+  variant,
 }: {
   children: React.ReactNode;
   style?: React.CSSProperties;
   slideshow?: boolean;
+  variant?: "home";
 }) {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    if (!slideshow) return;
-    const timer = setInterval(() => {
-      setIndex((i) => (i + 1) % heroSlides.length);
-    }, 4500);
-    return () => clearInterval(timer);
-  }, [slideshow]);
-
-  const bgStyle: React.CSSProperties = slideshow
-    ? {
-        backgroundImage: `linear-gradient(135deg, rgba(10,57,96,.72), rgba(30,158,106,.30)), url('${heroSlides[index]}')`,
-        ...style,
-      }
-    : { ...style };
-
   return (
-    <section className="hero" style={bgStyle}>
+    <section className={`hero${variant ? ` hero-${variant}` : ""}`} style={style}>
+      {slideshow && (
+        <Image
+          className="hero-image"
+          src="/images/edu/leadership.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          quality={75}
+          priority
+          aria-hidden="true"
+        />
+      )}
+      <div className="hero-glow" aria-hidden="true" />
       {children}
     </section>
   );
 }
+

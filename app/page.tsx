@@ -11,22 +11,37 @@ import { domainFocus } from "@/lib/content-data";
 export default function HomePage() {
   return (
     <>
-      <Hero>
-        <div className="grid g2" style={{ alignItems: "center", gap: 40 }}>
-          <div>
-            <p className="eyebrow">Educational Transformation Ecosystem</p>
-            <h1>Advancing Human Flourishing Through Transformational Education</h1>
+      <Hero variant="home">
+        <div className="home-hero-layout">
+          <div className="home-hero-copy">
+            <p className="eyebrow">A new rhythm for education</p>
+            <h1>Where education helps <span>everyone flourish.</span></h1>
             <p className="lead">
-              EduCrescendo Global™ develops innovative frameworks, assessment systems, leadership
-              models, and transformation solutions that help schools, educators, learners, and
-              communities flourish.
+              We help schools and communities turn human potential into lasting progress through
+              thoughtful frameworks, meaningful insight, and practical transformation.
             </p>
-            <WaButton message={BOOK_DISCOVERY_MSG}>Book a Discovery Conversation</WaButton>
-            <PageButton href="/flourish" variant="ghost-light" style={{ marginLeft: 12 }}>
-              Explore FLOURISH™
-            </PageButton>
+            <div className="home-hero-actions">
+              <WaButton message={BOOK_DISCOVERY_MSG} variant="accent">Start a conversation</WaButton>
+              <PageButton href="/flourish" variant="ghost-light">
+                Explore FLOURISH™
+              </PageButton>
+            </div>
+            <div className="home-hero-note">
+              <span className="note-mark" aria-hidden="true">✳</span>
+              <span>Grounded in people. Designed for real-world change.</span>
+            </div>
           </div>
-          <FlourishWheel />
+          <div className="home-hero-art">
+            <div className="art-orbit art-orbit-one" aria-hidden="true" />
+            <div className="art-orbit art-orbit-two" aria-hidden="true" />
+            <FlourishWheel />
+            <div className="art-caption"><span className="art-caption-dot" /> The FLOURISH™ ecosystem</div>
+          </div>
+        </div>
+        <div className="home-proof" aria-label="Our approach">
+          <span>Whole-person flourishing</span>
+          <span>Evidence-informed insight</span>
+          <span>Practical transformation</span>
         </div>
       </Hero>
 
@@ -145,3 +160,4 @@ function shortBlurb(title: string) {
   };
   return map[title] ?? "";
 }
+

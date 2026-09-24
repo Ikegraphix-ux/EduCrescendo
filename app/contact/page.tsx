@@ -166,14 +166,33 @@ export default function ContactPage() {
             </WaForm>
           </div>
           <div className="photo" style={{ minHeight: 200 }}>
-            <div className="cap"><b>Map</b>Location placeholder</div>
+            <iframe
+              title="Map to New Testament Assembly, Hilltop"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.683195117892!2d-1.667611926434653!3d6.6861086933091824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb97005a9aa093%3A0x56b0210eca09c85!2sNew%20Testament%20Assembly%2C%20Hilltop!5e0!3m2!1sen!2sgh!4v1790275895958!5m2!1sen!2sgh"
+              width="600"
+              height="450"
+              style={{ border: 0, width: "100%", height: "100%", minHeight: 200 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
       </Reveal>
 
       <Reveal className="alt">
         <p className="eyebrow">Location and Contact Information</p>
-        <FieldTags tags={["Email: [Insert Official Email]", "Phone: [Insert Official Number]", "Office Address: [Insert Address]", "Business Hours: Mon–Fri, 8:00 AM–5:00 PM"]} />
+        <FieldTags
+          tags={[
+            "Email: educrescendoglobal@gmail.com",
+            "Phone: 0201649041 / 0550729911",
+            "Office Address: Hill Top, Kumasi",
+            "Business Hours: Mon–Fri, 8:00 AM–5:00 PM",
+          ]}
+        />
+        <p className="body" style={{ marginTop: 12 }}>
+          <a href="mailto:educrescendoglobal@gmail.com">Email EduCrescendo Global</a>
+        </p>
       </Reveal>
 
       <Reveal className="center" style={{ background: "var(--blue-dark)", color: "#fff" }}>

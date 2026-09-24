@@ -1,19 +1,20 @@
 import Image from "next/image";
+import HeroCarousel from "./HeroCarousel";
 
 export default function Hero({
   children,
   style,
-  slideshow = true,
+  backgroundImage = true,
   variant,
 }: {
   children: React.ReactNode;
   style?: React.CSSProperties;
-  slideshow?: boolean;
+  backgroundImage?: boolean;
   variant?: "home";
 }) {
   return (
     <section className={`hero${variant ? ` hero-${variant}` : ""}`} style={style}>
-      {slideshow && (
+      {backgroundImage && (
         <Image
           className="hero-image"
           src="/images/edu/leadership.jpg"
@@ -26,7 +27,7 @@ export default function Hero({
         />
       )}
       <div className="hero-glow" aria-hidden="true" />
-      {children}
+      <HeroCarousel>{children}</HeroCarousel>
     </section>
   );
 }

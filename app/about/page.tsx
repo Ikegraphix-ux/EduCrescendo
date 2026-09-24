@@ -30,7 +30,7 @@ const focusAreas = [
 export default function AboutPage() {
   return (
     <>
-      <Hero slideshow={false} style={{ padding: "96px 56px 76px" }}>
+      <Hero backgroundImage={false} style={{ padding: "96px 56px 76px" }}>
         <p className="eyebrow">About</p>
         <h1 style={{ maxWidth: 660 }}>Reimagining Education for Human Flourishing</h1>
         <p className="lead">
@@ -243,3 +243,4 @@ export default function AboutPage() {
     </>
   );
 }
+

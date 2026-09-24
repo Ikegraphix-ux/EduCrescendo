@@ -297,3 +297,31 @@ footer input::placeholder { color: #8fb0c8; }
   .art-caption { backdrop-filter: none; }
 }
 
+/* Page-specific hero carousel */
+.hero-carousel { position: relative; z-index: 2; width: 100%; }
+.hero-slide { transform-origin: 18% 50%; animation: heroSlideEnter .62s cubic-bezier(.2,.75,.25,1) both; }
+.hero-message-slide { max-width: 790px; min-height: 330px; display: flex; flex-direction: column; justify-content: center; padding: 20px 0 8px; }
+.hero-message-slide h1 { font-size: clamp(38px, 5vw, 64px); line-height: 1.04; letter-spacing: -.035em; text-wrap: balance; }
+.hero-message-slide .lead { color: rgba(239,248,251,.8); max-width: 630px; }
+.hero-slide-action { align-self: flex-start; margin-top: 2px; text-decoration: none; }
+.hero-carousel-controls { display: flex; align-items: center; gap: 13px; min-height: 38px; margin-top: 12px; }
+.hero-arrow { width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; background: rgba(255,255,255,.07); color: #fff; font-size: 17px; cursor: pointer; transition: background .2s ease, transform .2s ease; }
+.hero-arrow:hover { background: rgba(255,255,255,.18); transform: translateY(-1px); }
+.hero-dots { display: flex; align-items: center; gap: 7px; }
+.hero-dot { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 999px; background: rgba(255,255,255,.42); cursor: pointer; transition: width .24s ease, background .24s ease; }
+.hero-dot.active { width: 23px; background: #f5a623; }
+.hero-play-toggle { padding: 7px 10px; border: 1px solid rgba(255,255,255,.26); border-radius: 999px; background: transparent; color: rgba(255,255,255,.82); font: 600 11px 'Inter', sans-serif; cursor: pointer; }
+.hero-play-toggle:hover { background: rgba(255,255,255,.1); color: #fff; }
+.hero-arrow:focus-visible, .hero-dot:focus-visible, .hero-play-toggle:focus-visible, .hero-slide-action:focus-visible { outline: 2px solid #a8e5c5; outline-offset: 3px; }
+@keyframes heroSlideEnter { from { opacity: 0; transform: translate3d(0,16px,0) rotateX(3deg); } to { opacity: 1; transform: translate3d(0,0,0) rotateX(0); } }
+@media (max-width: 640px) {
+  .hero-carousel-controls { margin-top: 18px; }
+  .hero-message-slide { min-height: 310px; padding-top: 8px; }
+  .hero-message-slide h1 { font-size: clamp(37px, 10vw, 52px); }
+  .hero-play-toggle { margin-left: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { animation: none; }
+  .hero-dot { transition: none; }
+}
+

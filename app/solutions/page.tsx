@@ -14,7 +14,7 @@ export const metadata = { title: "Solutions — EduCrescendo Global™" };
 export default function SolutionsPage() {
   return (
     <>
-      <Hero slideshow={false} style={{ padding: "96px 56px 76px" }}>
+      <Hero backgroundImage={false} style={{ padding: "96px 56px 76px" }}>
         <p className="eyebrow">Solutions</p>
         <h1 style={{ maxWidth: 680 }}>Practical Solutions for Meaningful and Measurable Transformation</h1>
         <p className="lead">
@@ -150,3 +150,4 @@ export default function SolutionsPage() {
     </>
   );
 }
+

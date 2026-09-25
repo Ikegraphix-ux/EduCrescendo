@@ -26,6 +26,11 @@ export default function Hero({
           aria-hidden="true"
         />
       )}
+      <div className="hero-motion" aria-hidden="true">
+        <span className="hero-motion__orbit hero-motion__orbit--wide" />
+        <span className="hero-motion__orbit hero-motion__orbit--tilted" />
+        <span className="hero-motion__orb" />
+      </div>
       <div className="hero-glow" aria-hidden="true" />
       <HeroCarousel>{children}</HeroCarousel>
     </section>

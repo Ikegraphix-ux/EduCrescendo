@@ -236,8 +236,8 @@ footer input::placeholder { color: #8fb0c8; }
 
 /* Polished, image-backed hero with a calm 3D flourish visual. */
 .hero { background: radial-gradient(ellipse at 18% 0%, #174b70 0%, transparent 54%), linear-gradient(135deg, #092a45 0%, #0a3960 55%, #0c483f 100%); isolation: isolate; }
-.hero::before { background: linear-gradient(115deg, rgba(7,31,51,.9) 5%, rgba(10,57,96,.76) 53%, rgba(9,74,57,.60)); z-index: 1; }
-.hero .hero-image { object-fit: cover; opacity: .28; z-index: 0; }
+.hero::before { background: linear-gradient(115deg, rgba(7,31,51,.76) 5%, rgba(10,57,96,.58) 53%, rgba(9,74,57,.44)); z-index: 1; }
+.hero .hero-image { object-fit: cover; opacity: .48; z-index: 0; }
 .hero-motion { position: absolute; inset: 0; z-index: 1; overflow: hidden; perspective: 1100px; pointer-events: none; }
 .hero-motion::before { content: ''; position: absolute; inset: -45%; opacity: .10; background: repeating-linear-gradient(125deg, transparent 0 54px, rgba(205,244,228,.18) 55px, transparent 56px 108px); transform: translate3d(0,0,-120px) rotateX(58deg) rotateZ(-13deg); mask-image: linear-gradient(90deg, transparent 10%, #000 54%, transparent 98%); }
 .hero-motion__orbit { position: absolute; display: block; border: 1px solid rgba(196,239,220,.16); border-radius: 50%; transform-style: preserve-3d; backface-visibility: hidden; }
@@ -247,7 +247,7 @@ footer input::placeholder { color: #8fb0c8; }
 .hero-glow { position: absolute; z-index: 1; width: 460px; height: 460px; right: -150px; top: -180px; border-radius: 50%; background: radial-gradient(circle, rgba(66,205,153,.25), transparent 68%); pointer-events: none; }
 .hero > :not(.hero-image):not(.hero-glow):not(.hero-motion) { position: relative; z-index: 2; }
 .hero-home { padding-top: 70px; padding-bottom: 26px; min-height: 620px; display: flex; flex-direction: column; justify-content: center; }
-.hero-home::before { background: linear-gradient(105deg, rgba(5,28,47,.94) 0%, rgba(7,43,68,.84) 48%, rgba(9,60,50,.64) 100%); }
+.hero-home::before { background: linear-gradient(105deg, rgba(5,28,47,.84) 0%, rgba(7,43,68,.69) 48%, rgba(9,60,50,.50) 100%); }
 .home-hero-layout { display: grid; grid-template-columns: minmax(0,1.05fr) minmax(370px,.95fr); align-items: center; gap: clamp(24px,5vw,68px); width: 100%; max-width: 1200px; margin: 0 auto; }
 .home-hero-copy { max-width: 640px; }
 .hero-home .eyebrow { color: #a8e5c5; letter-spacing: .18em; }
@@ -363,4 +363,3 @@ footer input::placeholder { color: #8fb0c8; }
 @media (prefers-reduced-motion: reduce) {
   .back-to-top { transition: none; }
 }
-

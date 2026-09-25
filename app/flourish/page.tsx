@@ -14,7 +14,7 @@ export const metadata = { title: "FLOURISH™ Ecosystem — EduCrescendo Global�
 export default function FlourishPage() {
   return (
     <>
-      <Hero backgroundImage={false} style={{ background: "radial-gradient(circle at 85% 25%, #14603f 0%, #0c4a30 55%, var(--blue-dark) 100%)" }}>
+      <Hero backgroundImage="/images/edu/flourid.jpg" style={{ background: "radial-gradient(circle at 85% 25%, #14603f 0%, #0c4a30 55%, var(--blue-dark) 100%)" }}>
         <div className="grid g2" style={{ alignItems: "center", gap: 40 }}>
           <div>
             <p className="eyebrow">The FLOURISH™ Ecosystem</p>
@@ -193,4 +193,3 @@ export default function FlourishPage() {
     </>
   );
 }
-

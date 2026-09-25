@@ -12,7 +12,7 @@ export const metadata = { title: "Insights — EduCrescendo Global™" };
 export default function InsightsPage() {
   return (
     <>
-      <Hero backgroundImage={false} style={{ padding: "96px 56px 76px" }}>
+      <Hero backgroundImage="/images/edu/researchdesk.jpg" style={{ padding: "96px 56px 76px" }}>
         <p className="eyebrow">Insights</p>
         <h1 style={{ maxWidth: 680 }}>Ideas, Research, and Perspectives for Educational Transformation</h1>
         <p className="lead">
@@ -187,4 +187,3 @@ export default function InsightsPage() {
     </>
   );
 }
-

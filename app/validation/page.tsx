@@ -14,7 +14,7 @@ export default function ValidationPage() {
   return (
     <>
       <Hero
-        backgroundImage={false}
+        backgroundImage="/images/edu/pioneer.jpg"
         style={{ background: "radial-gradient(circle at 80% 20%, #a06a10 0%, #6b4708 55%, var(--blue-dark) 100%)" }}
       >
         <p className="eyebrow" style={{ color: "#ffd98a" }}>Pioneer Institutions</p>
@@ -230,4 +230,3 @@ export default function ValidationPage() {
     </>
   );
 }
-

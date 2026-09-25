@@ -4,12 +4,12 @@ import HeroCarousel from "./HeroCarousel";
 export default function Hero({
   children,
   style,
-  backgroundImage = true,
+  backgroundImage = "/images/edu/leadership.jpg",
   variant,
 }: {
   children: React.ReactNode;
   style?: React.CSSProperties;
-  backgroundImage?: boolean;
+  backgroundImage?: string | false;
   variant?: "home";
 }) {
   return (
@@ -17,7 +17,7 @@ export default function Hero({
       {backgroundImage && (
         <Image
           className="hero-image"
-          src="/images/edu/leadership.jpg"
+          src={backgroundImage}
           alt=""
           fill
           sizes="100vw"
@@ -36,4 +36,3 @@ export default function Hero({
     </section>
   );
 }
-

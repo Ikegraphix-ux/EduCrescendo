@@ -13,7 +13,7 @@ export const metadata = { title: "Contact — EduCrescendo Global™" };
 export default function ContactPage() {
   return (
     <>
-      <Hero backgroundImage={false}>
+      <Hero backgroundImage="/images/edu/community.jpg">
         <h1 style={{ maxWidth: 620 }}>Let&apos;s Build a Flourishing Future Together</h1>
         <p className="lead">
           Meaningful transformation begins with meaningful conversations. Whether you are exploring
@@ -218,4 +218,3 @@ export default function ContactPage() {
     </>
   );
 }
-

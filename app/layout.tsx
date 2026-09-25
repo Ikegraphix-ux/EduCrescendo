@@ -5,6 +5,7 @@ import SiteNav from "@/components/SiteNav";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
 import MobileCta from "@/components/MobileCta";
+import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {
   title: "EduCrescendo Global™ — Advancing Human Flourishing Through Transformational Education",
@@ -32,7 +33,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </div>
         <ChatWidget />
         <MobileCta />
+        <BackToTop />
       </body>
     </html>
   );
 }
+

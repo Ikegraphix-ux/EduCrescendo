@@ -23,13 +23,13 @@ export default function InsightsPage() {
           impact. Here we explore the questions that matter, challenge conventional thinking, and
           share ideas that inspire meaningful change.
         </p>
-        <PageButton href="/insights">Explore Articles</PageButton>
+        <PageButton href="#featured-perspectives">Explore Perspectives</PageButton>
         <WaButton
           message="Hi, I'd like to subscribe to EduCrescendo Global Insights updates."
           variant="ghost-light"
           style={{ marginLeft: 12 }}
         >
-          Subscribe for Updates
+          Request Updates on WhatsApp
         </WaButton>
       </Hero>
 
@@ -68,43 +68,43 @@ export default function InsightsPage() {
       </Reveal>
 
       <Reveal>
-        <p className="eyebrow">Editor&apos;s Featured Insights</p>
+        <p className="eyebrow" id="featured-perspectives">Ideas We&apos;re Exploring</p>
+        <h2>Perspectives on flourishing education</h2>
         <div className="grid g3">
           <div className="card">
             <Photo src="/images/edu/researchdesk.jpg" alt="Research desk" minHeight={150} />
             <h3 style={{ marginTop: 16 }}>Why Flourishing May Be the Missing Measure of Educational Success</h3>
-            <p className="body">Brief summary placeholder.</p>
+            <p className="body">A broader view of educational success considers wellbeing, purpose, relationships, and the conditions that help people learn and grow.</p>
           </div>
           <div className="card">
             <Photo src="/images/edu/classroom.jpg" alt="Classroom" minHeight={150} />
             <h3 style={{ marginTop: 16 }}>Beyond Academic Achievement: Rethinking What Schools Are For</h3>
-            <p className="body">Brief summary placeholder.</p>
+            <p className="body">Academic progress matters. So do belonging, character, agency, and preparing learners to contribute to a changing world.</p>
           </div>
           <div className="card">
             <Photo src="/images/edu/leadershipcircle.jpg" alt="Leadership circle" minHeight={150} />
             <h3 style={{ marginTop: 16 }}>The Rise of Flourishing Leadership™</h3>
-            <p className="body">Brief summary placeholder.</p>
+            <p className="body">Explore how vision, trust, culture, and reflective practice help leaders create the conditions for people and institutions to thrive.</p>
           </div>
         </div>
       </Reveal>
 
       <Reveal className="alt">
-        <p className="eyebrow">Research Library</p>
-        <h2>Research, Briefs, and Publications</h2>
+        <p className="eyebrow">Research and Resources</p>
+        <h2>Looking for a publication or framework?</h2>
         <p className="body" style={{ marginBottom: 18, maxWidth: 600 }}>
-          Explore a growing collection of research-informed resources designed to support leaders,
-          educators, institutions, and partners.
+          Contact our team to ask about currently available research, framework documents, or
+          validation findings. We can point you to the resources relevant to your work.
         </p>
-        <FieldTags tags={["Research Briefs", "White Papers", "Position Papers", "Framework Documents", "Case Studies", "Educational Reports", "Validation Findings"]} />
-        <PageButton href="/insights" style={{ marginTop: 18 }}>Access Resources</PageButton>
+        <PageButton href="/contact">Ask about available resources</PageButton>
       </Reveal>
 
       <Reveal>
-        <p className="eyebrow">Thought Leadership Series</p>
-        <h2>Signature Series</h2>
+        <p className="eyebrow">Topics in Focus</p>
+        <h2>Questions shaping our work</h2>
         <p className="body" style={{ marginBottom: 18, maxWidth: 620 }}>
-          EduCrescendo Global™ develops recurring thought leadership series focused on pressing
-          educational challenges and emerging opportunities. Potential series include:
+          These themes guide our research, conversations, and practical work across education and
+          society.
         </p>
         <div className="grid g3">
           {[
@@ -126,12 +126,11 @@ export default function InsightsPage() {
             <p className="eyebrow">Case Studies and Stories</p>
             <h2>Transformation in Practice</h2>
             <p className="body" style={{ marginBottom: 0 }}>
-              Ideas matter. Implementation matters even more. This section will feature examples,
-              reflections, and stories demonstrating how frameworks, tools, and strategies are
-              being applied in real-world contexts — including school transformation stories,
-              validation programme experiences, leadership development journeys, innovation case
-              studies, and community impact stories.
+              We are building a collection of case studies and partner stories as projects progress.
+              For current examples of school transformation, leadership development, or validation
+              work, contact our team.
             </p>
+            <PageButton href="/contact" style={{ marginTop: 18 }}>Ask about our work</PageButton>
           </div>
           <Photo src="/images/edu/interview.jpg" alt="Interview setup, natural light" minHeight={220} />
         </div>
@@ -171,8 +170,8 @@ export default function InsightsPage() {
           The future is shaped by the ideas we cultivate today. At EduCrescendo Global™, we believe
           flourishing is one of the most important conversations of our time.
         </h2>
-        <WaButton message="Hi, I'd like to subscribe to EduCrescendo Global Insights updates." variant="accent">
-          Subscribe for Updates
+        <WaButton message="Hi, I'd like to receive updates from EduCrescendo Global Insights." variant="accent">
+          Request Updates on WhatsApp
         </WaButton>
         <PageButton href="/flourish" variant="ghost-light" style={{ marginLeft: 10 }}>
           Explore the FLOURISH™ Ecosystem

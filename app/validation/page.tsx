@@ -197,11 +197,11 @@ export default function ValidationPage() {
       </Reveal>
 
       <Reveal className="center" style={{ maxWidth: 560 }}>
-        <p className="eyebrow" style={{ justifyContent: "center" }}>Testimonial</p>
-        <h2>Voices of Future Transformation</h2>
+        <p className="eyebrow" style={{ justifyContent: "center" }}>Learning in Partnership</p>
+        <h2>Shared Learning, Built on Trust</h2>
         <p className="body center">
-          As validation programmes expand, this section will feature experiences, insights, and
-          stories from participating institutions.
+          We will share reflections from participating institutions as the programme develops, with
+          each partner’s permission and respect for their context.
         </p>
       </Reveal>
 

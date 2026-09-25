@@ -117,12 +117,12 @@ export default function HomePage() {
           <div className="card">
             <Photo src="/images/edu/research.jpg" alt="Research desk" minHeight={130} />
             <h3 style={{ marginTop: 16 }}>Flourishing Education™</h3>
-            <p className="body">Featured article placeholder.</p>
+            <p className="body">Explore how flourishing can broaden the way we think about educational purpose and learner growth.</p>
           </div>
           <div className="card">
             <Photo src="/images/edu/leadership.jpg" alt="Leadership meeting" minHeight={130} />
             <h3 style={{ marginTop: 16 }}>Flourishing Leadership™</h3>
-            <p className="body">Featured article placeholder.</p>
+            <p className="body">Consider the leadership practices that help educators and school communities thrive.</p>
           </div>
           <div className="card">
             <Photo
@@ -133,7 +133,7 @@ export default function HomePage() {
               caption="School transformation grows through meaningful collaboration."
             />
             <h3 style={{ marginTop: 16 }}>School Transformation</h3>
-            <p className="body">Featured article placeholder.</p>
+            <p className="body">See why meaningful collaboration is central to lasting school transformation.</p>
           </div>
         </div>
       </Reveal>

@@ -41,20 +41,23 @@ export default function Footer() {
         </div>
         <div>
           <h3>Newsletter</h3>
-          <input placeholder="you@institution.edu" />
           <WaButton
             message="Hi, I'd like to subscribe to the EduCrescendo Global newsletter."
             variant="accent"
             style={{ width: "100%", padding: 11 }}
           >
-            Subscribe
+            Request updates on WhatsApp
           </WaButton>
         </div>
       </div>
       <div className="bottom">
-        <span>© EduCrescendo Global™ — All rights reserved</span>
-        <span>Privacy Policy · Terms</span>
+        <span>© 2026 EduCrescendo Global™ — All rights reserved</span>
+        <nav className="legal-links" aria-label="Legal information">
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Use</Link>
+        </nav>
       </div>
     </footer>
   );
 }
+
